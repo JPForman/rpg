@@ -5,16 +5,16 @@ import './styles.css';
 
 
 $(document).ready(function(){
-  $("#numberButton1").click(function(event) {
+  $("#magicButton").click(function(event) {
     event.preventDefault();
 
-    const numberInput1 = $("#numberInput1").val();
-    $('#zProgress1').animate({ width: numberInput1 + "%"});
+    const magicInput = $("#magicInput").val();
+    $('#magicProgress').animate({ width: magicInput + "%"});
   });
 
 
-  $("#numberButton2").click(function() {
-    const numberInput2 = $("#numberInput2").val();
-    $('#zProgress2').animate({ width: numberInput2 + "%"});
+  $("#healthButton").click(function() {
+    const healthInput = $("#healthInput").val();
+    $('#healthProgress').animate({ width: healthInput + "%"});
   });
 });
