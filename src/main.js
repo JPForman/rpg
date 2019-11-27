@@ -25,7 +25,7 @@ $(document).ready(function(){
   }
 
   function characterElements(response) {
-    $("#picture").html("<img src='" +  (response.records[0].baseimageurl) +  "'>");
+    $('#picture').css('background-image', `url(${response.records[0].baseimageurl})`);
   }
 
   $("#magicButton").click(function(event) {

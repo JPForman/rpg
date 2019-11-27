@@ -72,10 +72,10 @@ body {
 
 #picture {
   float: right;
-  height: 10px;
-  width: 10px;
-  /* height: 30px; */
-  /* border: 2px solid black; */
+  height: 100px;
+  width: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #pictureCard {
