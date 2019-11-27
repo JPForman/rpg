@@ -21,11 +21,9 @@ $(document).ready(function(){
   })();
 
   function backgroundElements(response) {
-    // $("#body").html("<img src='" +  (response. results[0].urls.small) +  "'>");
-    $('body').css('background-image', `url(${response.results[0].urls.small})`);
-
-    // $('#body').html({ background: url('response. results[0].urls.small') });
+    $('#backgroundImg').css('background-image', `url(${response.results[8].urls.regular})`);
   }
+
   function characterElements(response) {
     $("#picture").html("<img src='" +  (response.records[0].baseimageurl) +  "'>");
   }
