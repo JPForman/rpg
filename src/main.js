@@ -21,7 +21,7 @@ $(document).ready(function(){
   })();
 
   function backgroundElements(response) {
-    $('#backgroundImg').css('background-image', `url(${response.results[8].urls.regular})`);
+    $('#backgroundImg').css('background-image', `url(${response.results[7].urls.regular})`);
   }
 
   function characterElements(response) {
