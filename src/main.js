@@ -7,12 +7,19 @@ import { HarvardService } from './HarvardService.js';
 
 
 $(document).ready(function(){
+
+//api call and return for character picture
   (async () => {
         let harvardService = new HarvardService();
         const response = await harvardService.getArt();
         characterElements(response);
       })();
 
+      function characterElements(response) {
+        $('#picture').css('background-image', `url(${response.records[0].baseimageurl})`);
+      }
+
+//api call and return for background image
   (async () => {
     let unshutterService = new UnshutterService();
     const response = await unshutterService.getBackground();
@@ -24,10 +31,7 @@ $(document).ready(function(){
     $('#backgroundImg').css('background-image', `url(${response.results[7].urls.regular})`);
   }
 
-  function characterElements(response) {
-    $('#picture').css('background-image', `url(${response.records[0].baseimageurl})`);
-  }
-
+//magic status bar elements
   $("#magicButton").click(function(event) {
     event.preventDefault();
 
@@ -36,6 +40,7 @@ $(document).ready(function(){
   });
 
 
+//health status bar elements
   $("#healthButton").click(function() {
     const healthInput = $("#healthInput").val();
     $('#healthProgress').animate({ width: healthInput + "%"});
