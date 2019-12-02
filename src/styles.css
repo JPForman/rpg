@@ -4,6 +4,7 @@ body, html {
 
 body {
   background-color: black;
+  cursor:url("https://upload.wikimedia.org/wikipedia/commons/6/6c/Human-emblem-generic-black-128.png"), auto;
 }
 
 .barTitle {
@@ -84,7 +85,8 @@ body {
   height: 25px;
 }
 
-#picture {
+#charPicture {
+  background-image: url('https://cdn.pixabay.com/photo/2013/07/12/11/56/ninja-144959_960_720.png');
   float: right;
   height: 100px;
   width: 100px;
